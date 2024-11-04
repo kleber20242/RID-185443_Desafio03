@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02080d8b9f.js" crossorigin="anonymous"></script>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div id="all">
+    <h1>Lista de Tarefas</h1>
+    <header>
+        <input id="inputTarefa" type="text" placeholder="Digite Sua Tarefa">
+        <button onclick="addTarefa()" id="btn-add" class="add">Adicionar</button>
+    </header>
+    <main id="areaLista">
+    </main>
+    <footer>
+        <button onclick="removeTarefaConcluida()" id="remover-tarefa">Remover Tarefas Concluidas</button> 
+    </footer>
+    <div id="contadorTarefas">0/0 concluídas</div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>

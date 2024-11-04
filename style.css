@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#all{
+    background-color: rgb(16, 3, 77);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    margin-top: 18rem;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(220, 227, 231);
+    
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    justify-content: center;
+    
+   
+}
+
+input{
+    height: 50px;
+    font-size: 2rem;
+    width: 50%;
+    padding-left: 10%;
+}
+
+button.add{
+    width: 10%;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin:auto auto;
+    padding-top: 40px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item-icone{
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.item-nome{
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-botao{
+    flex: 25%;
+    
+    
+}
+
+.delete{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.item-icone > .fa-solid {
+    color: green;
+}
+
+.item.clicado{
+    background-color: #d4f6d9;
+}
+
+.item.clicado  .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+#remover-tarefa{
+    box-sizing: border-box;
+    height: 2.6rem;
+    color: #ffffff;
+    background-color: rgb(5, 5, 5);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0 1.6rem;
+    width: 12%;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+
+#contadorTarefas{
+    position: relative;
+    color: rgb(241, 237, 237);
+    margin-left: 1rem;
+    bottom: 1rem;
+    
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+    
+body{
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+    #all {
+        position: relative;
+        width: 100%;      
+        padding: 0; 
+        margin-left: 0%;    
+        top: 150px;
+         
+    }
+    #remover-tarefa {
+        position: relative;
+        width: 60%;
+        top: 0.5rem;
+        font-size: 10px; 
+    }
+
+    h1{
+        font-size: 2.5rem;
+        top:15px;
+        position: relative;   
+    }
+
+    #contadorTarefas {
+        font-size: 11px;
+    }
+
+    #btn-add{
+        width: 100%;
+        margin-top: 15px;
+        top:15px;
+        position: relative;   
+    }
+    
+    #inputTarefa{
+        top:15px;
+        position: relative;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+     
+    body{
+        overflow-x: auto;
+        overflow-y: auto ;
+    }
+   
+    #all {
+        
+        padding: 0;
+        width: 100%; 
+        height: 100%; 
+        margin-left: 0%;
+                
+     }
+     #remover-tarefa {
+         position: relative;
+         width: 55%;
+         top: 0.5rem;
+         max-width: 100%;
+         font-size: 12px;  
+     }
+ 
+     #contadorTarefas{
+        font-size: 15px;
+     }
+
+     h1{
+         font-size:50px;
+         position: relative; 
+     }
+ 
+     #btn-add{
+         width: 100%;
+         margin-top: 15px;
+         top:15px;
+         position: relative;
+         
+     }
+     
+     #inputTarefa{
+         top:15px;
+         position: relative;
+         width: 100%;
+         font-size: 18px;
+     }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    body{
+        overflow-x: auto;
+        overflow-y: auto ;
+    }
+    
+    #all{
+        padding: 0;
+        width: 100%; 
+        height: 100%; 
+        margin-left: 0%;
+    }
+
+    #remover-tarefa{
+        width: 25%;
+        font-size: 11px;
+    }
+    
+    #inputTarefa{
+        width: 70%;
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    #btn-add{
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+   
+    #all{
+        width: 100%; 
+        height: 100%; 
+        margin-left: 0%; 
+    }
+
+    #remover-tarefa{
+        width: 25%;
+    }
+
+    #inputTarefa {
+        width: 70%;
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+}
